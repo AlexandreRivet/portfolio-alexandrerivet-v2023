@@ -1,16 +1,18 @@
 "use client"
 import { useRef, useEffect } from "react";
-import Scene from './3d/scene';
+import { Stage } from './3d/stage';
 
-export default function Stage() {
+export default function StageView() {
+  const stage = new Stage();
   const canvas = useRef<HTMLCanvasElement>(null);
   
   useEffect(() => {
-    const scene = new Scene();
-    scene.init(canvas.current);
+    if (canvas.current !== null) {
+      stage.init(canvas.current);
+    }
 
     return () => {
-      scene.destroy();
+      stage.destroy();
     };
   }, []);
 

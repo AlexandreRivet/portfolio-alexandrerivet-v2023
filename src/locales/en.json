@@ -1,0 +1,29 @@
+{
+  "home": {
+    "metadata": {
+      "description": "Creative developer living in Paris, at PlayPlay"
+    },
+    "content": {
+      "description": "Creative developer living in Paris, at PlayPlay"
+    }
+  },
+  "about": {
+    "metadata": {
+      "title": "About"
+    },
+    "content": {
+      "description": "About"
+    }
+  },
+  "project": {
+    "name": "Project"
+  },
+  "contact": {
+    "metadata": {
+      "title": "Contact"
+    },
+    "content": {
+      "description": "Contact"
+    }
+  }
+}
