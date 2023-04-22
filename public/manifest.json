@@ -1,0 +1,11 @@
+{
+  "name": "Alexandre Rivet",
+  "short_name": "Alexandre Rivet",
+  "start_url": "/",
+  "scope": "/",
+  "theme_color": "#000",
+  "background_color": "#fff",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "description": "Portfolio of Alexandre Rivet"
+}
