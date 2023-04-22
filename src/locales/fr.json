@@ -1,0 +1,29 @@
+{
+  "home": {
+    "metadata": {
+      "description": "Développeur créatif sur Paris, chez PlayPlay"
+    },
+    "content": {
+      "description": "Développeur créatif sur Paris, chez PlayPlay"
+    }
+  },
+  "about": {
+    "metadata": {
+      "title": "A propos"
+    },
+    "content": {
+      "description": "A propos"
+    }
+  },
+  "project": {
+    "name": "Projet"
+  },
+  "contact": {
+    "metadata": {
+      "title": "Contact"
+    },
+    "content": {
+      "description": "Contact"
+    }
+  }
+}
