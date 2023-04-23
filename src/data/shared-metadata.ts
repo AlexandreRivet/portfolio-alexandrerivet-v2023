@@ -2,18 +2,18 @@ import type { Metadata as NextMetadata } from "next";
 import { Metadata } from "@/locales/types";
 import { info } from "./info";
 import { i18n } from "@/locales/i18n-config";
-import { getPublicUrl } from "@/utils";
+import { getRootUrl, getPublicUrl } from "@/utils";
 
 export const getSharedMetadata = (lang: string, url = '/', metadata: Metadata = {}): NextMetadata => {
   const fMetadata = {
     ...metadata,
     title: [metadata.title, info.name].filter((value) => typeof value !== 'undefined').join(' | '),
   }
-  const rootUrl = getPublicUrl();
-  const fUrl = `${rootUrl}${url}`;
+  const rUrl = getRootUrl();
+  const fUrl = getPublicUrl(url);
   return {
     applicationName: info.name,
-    authors: { name: info.name, url: rootUrl },
+    authors: { name: info.name, url: rUrl },
     creator: info.name,
     publisher: info.name,
     keywords: [info.name, 'Creative Developer', 'WebGL'],
