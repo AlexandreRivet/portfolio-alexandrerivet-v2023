@@ -5,7 +5,7 @@ import { getPublicUrl } from "@/utils";
 export default function JsonLd({ schema }: { schema: object }) {
   const json = {
     ...schema,
-    url: `${getPublicUrl()}${usePathname()}`,
+    url: getPublicUrl(usePathname()),
   }
 
   return <script

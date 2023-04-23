@@ -2,7 +2,13 @@
 import { useRef, useEffect } from "react";
 import { Stage } from './3d/stage';
 
-export default function StageView() {
+export default function StageView(
+  {
+    lang
+  }: {
+   lang: string
+  }
+) {
   const stage = new Stage();
   const canvas = useRef<HTMLCanvasElement>(null);
   
